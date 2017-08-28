@@ -1,0 +1,82 @@
+html {
+	font-size: 10px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.wrapper {
+	max-width: 1170px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+section {
+	padding: 50px 5%;
+}
+
+h1, h2, h3, h4, h5, p {
+	font-weight: 400;
+	margin: 0;
+}
+
+h1 {
+    @include fontSize(50);
+    font-weight: 400;
+    margin-bottom: 15px;
+    @include respond-to(medium) {
+		@include fontSize(40);
+		margin-top: 20%;
+	}
+}
+
+h2 {
+    @include fontSize(40);
+    font-weight: 400;
+}
+
+h3 {
+    @include fontSize(31);
+    font-weight: 400;
+}
+
+h4 {
+    @include fontSize(22);
+    // width: 60%;
+    margin: 0 auto;
+    font-weight: 400;
+}
+
+h5 {
+    @include fontSize(20);
+}
+
+p {
+    @include fontSize(13);
+    font-weight: 400;
+    line-height: 1.8;
+}
+
+img {
+	max-width: 100%;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	 @include fontSize(13);
+}
+
+button {
+	background: none;
+	text-transform: uppercase;
+	@include fontSize(13);
+	border-radius: 4px;
+}
+
+.fa {
+	@include fontSize(15);
+}
